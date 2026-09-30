@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Soccergate - ร้านรองเท้าสตั๊ด รองเท้าฟุตซอล และอุปกรณ์กีฬาสำหรับคนรักฟุตบอล">
+  <title>Soccergate | ประตูสู่โลกฟุตบอล</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">⚡ ส่งฟรีเมื่อช้อปครบ 1,500 บาท • รับประกันสินค้าของแท้ 100%</div>
+
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Soccergate">
+        <span class="brand-mark">SG</span>
+        <span>Soccergate<small>ประตูสู่โลกฟุตบอล</small></span>
+      </a>
+
+      <button class="menu-toggle" aria-label="เปิดเมนู">☰</button>
+
+      <nav class="nav-links">
+        <a href="#home">หน้าแรก</a>
+        <a href="#categories">หมวดหมู่</a>
+        <a href="#products">สินค้า</a>
+        <a href="#about">เกี่ยวกับเรา</a>
+        <a href="#contact">ติดต่อ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="searchBtn" aria-label="ค้นหา">⌕</button>
+        <button class="cart-btn" id="cartBtn" aria-label="ตะกร้าสินค้า">
+          🛒 <span>ตะกร้า</span><b id="cartCount">0</b>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-bg"></div>
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">SOCCERGATE • FOOTBALL STORE</p>
+          <h1>ก้าวลงสนาม<br><em>ให้เหนือกว่า</em></h1>
+          <p class="hero-text">รวมรองเท้าสตั๊ด รองเท้าฟุตซอล และอุปกรณ์ฟุตบอลคัดสรรสำหรับทุกสไตล์การเล่น</p>
+          <div class="hero-actions">
+            <a href="#products" class="btn btn-primary">ช้อปสินค้าทั้งหมด <span>→</span></a>
+            <a href="#categories" class="btn btn-ghost">ดูหมวดหมู่</a>
+          </div>
+          <div class="hero-stats">
+            <div><strong>500+</strong><span>สินค้า</span></div>
+            <div><strong>100%</strong><span>ของแท้</span></div>
+            <div><strong>24/7</strong><span>ดูแลคุณ</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-hint">SCROLL <span>↓</span></div>
+    </section>
+
+    <section class="categories section" id="categories">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">SHOP BY CATEGORY</p>
+            <h2>เลือกอุปกรณ์ที่ใช่<br><span>สำหรับเกมของคุณ</span></h2>
+          </div>
+          <p class="section-note">คัดมาให้แล้วสำหรับสนามหญ้า สนามฟุตซอล และการซ้อมทุกวัน</p>
+        </div>
+
+        <div class="category-grid">
+          <button class="category-card cat-1" data-filter="สตั๊ด">
+            <div class="cat-overlay"></div>
+            <div class="cat-content"><span>01</span><h3>รองเท้าสตั๊ด</h3><p>สำหรับสนามหญ้า</p><b>SHOP →</b></div>
+          </button>
+          <button class="category-card cat-2" data-filter="ฟุตซอล">
+            <div class="cat-overlay"></div>
+            <div class="cat-content"><span>02</span><h3>รองเท้าฟุตซอล</h3><p>ควบคุมบอลได้มั่นใจ</p><b>SHOP →</b></div>
+          </button>
+          <button class="category-card cat-3" data-filter="อุปกรณ์">
+            <div class="cat-overlay"></div>
+            <div class="cat-content"><span>03</span><h3>อุปกรณ์กีฬา</h3><p>พร้อมลุยทุกการซ้อม</p><b>SHOP →</b></div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="products section" id="products">
+      <div class="container">
+        <div class="section-heading products-heading">
+          <div>
+            <p class="eyebrow">FEATURED PRODUCTS</p>
+            <h2>ไอเทม <span>ที่ต้องมี</span></h2>
+          </div>
+          <div class="product-controls">
+            <div class="filter-tabs" id="filterTabs">
+              <button class="active" data-filter="ทั้งหมด">ทั้งหมด</button>
+              <button data-filter="สตั๊ด">สตั๊ด</button>
+              <button data-filter="ฟุตซอล">ฟุตซอล</button>
+              <button data-filter="อุปกรณ์">อุปกรณ์</button>
+            </div>
+            <div class="search-box" id="searchBox">
+              <input id="searchInput" type="search" placeholder="ค้นหาสินค้า...">
+            </div>
+          </div>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+        <p class="empty-state" id="emptyState">ไม่พบสินค้าที่ค้นหา</p>
+      </div>
+    </section>
+
+    <section class="promo section">
+      <div class="container promo-inner">
+        <div>
+          <p class="eyebrow">SOCCERGATE MEMBERS</p>
+          <h2>สมัครสมาชิกวันนี้<br><span>รับส่วนลด 10%</span></h2>
+          <p>รับข่าวสินค้าใหม่ โปรโมชัน และสิทธิพิเศษก่อนใคร</p>
+        </div>
+        <form id="memberForm" class="member-form">
+          <input type="email" placeholder="อีเมลของคุณ" required>
+          <button class="btn btn-primary" type="submit">สมัครสมาชิก →</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container about-grid">
+        <div class="about-card">
+          <span class="big-number">SG</span>
+          <p>PLAY YOUR<br><strong>OWN GAME.</strong></p>
+        </div>
+        <div>
+          <p class="eyebrow">WHY SOCCERGATE</p>
+          <h2>เพราะฟุตบอล<br><span>มากกว่าแค่เกม</span></h2>
+          <p class="about-text">Soccergate ตั้งใจเป็นพื้นที่สำหรับคนรักฟุตบอลทุกระดับ ตั้งแต่นักเตะมือใหม่จนถึงคนที่ลงแข่งจริง เราคัดสินค้าโดยให้ความสำคัญกับฟังก์ชัน ความสบาย และสไตล์ เพื่อให้คุณพร้อมสำหรับทุกนาทีในสนาม</p>
+          <div class="features">
+            <div><b>01</b><span>ของแท้<br><small>คัดสรรจากแบรนด์ชั้นนำ</small></span></div>
+            <div><b>02</b><span>ส่งไว<br><small>แพ็กอย่างปลอดภัยทุกออเดอร์</small></span></div>
+            <div><b>03</b><span>ทีมฟุตบอล<br><small>ให้คำแนะนำเรื่องอุปกรณ์</small></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#home"><span class="brand-mark">SG</span><span>Soccergate<small>ประตูสู่โลกฟุตบอล</small></span></a>
+        <p class="footer-copy">Football gear for every player.<br>เล่นในแบบของคุณ</p>
+      </div>
+      <div><h4>SHOP</h4><a href="#products">รองเท้าสตั๊ด</a><a href="#products">รองเท้าฟุตซอล</a><a href="#products">อุปกรณ์กีฬา</a></div>
+      <div><h4>HELP</h4><a href="#">วิธีสั่งซื้อ</a><a href="#">การจัดส่ง</a><a href="#">เปลี่ยน/คืนสินค้า</a></div>
+      <div><h4>CONTACT</h4><p>โทร. 02-000-0000</p><p>hello@soccergate.com</p><div class="socials"><a href="#">IG</a><a href="#">FB</a><a href="#">LINE</a></div></div>
+    </div>
+    <div class="container copyright">© 2026 Soccergate. All rights reserved.</div>
+  </footer>
+
+  <div class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+    <aside class="drawer">
+      <div class="drawer-head"><h3>ตะกร้าสินค้า</h3><button id="closeCart">×</button></div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-footer">
+        <div><span>รวม</span><strong id="cartTotal">฿0</strong></div>
+        <button class="btn btn-primary checkout" id="checkoutBtn">ดำเนินการสั่งซื้อ →</button>
+      </div>
+    </aside>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
